@@ -1,0 +1,196 @@
+[general]
+	applicationID = "762726289341677668"
+	enabled = true
+	debugging = false
+	launcherIntegration = false
+	rpcImageServer = false
+	rpcImageServerUrl = "https://rpcavatar.firstdark.dev"
+	version = 26
+
+[init]
+	enabled = true
+
+	[[init.presence]]
+		type = "PLAYING"
+		description = "Cargando Craftania Modpack"
+		state = "Iniciando..."
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}"
+		smallImageKey = ["mclogo"]
+		smallImageText = "{{game.mods}} mods"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[main_menu]
+	enabled = true
+
+	[[main_menu.presence]]
+		type = "PLAYING"
+		description = "{{player.name}} en menu"
+		state = "Nada de nada"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[server_list]
+	enabled = false
+
+	[[server_list.presence]]
+		type = "PLAYING"
+		description = "{{player.name}} is looking for a server"
+		state = "Searching for friends"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "It's Minecraft {{game.version}}, but modded"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[realms_list]
+	enabled = false
+
+	[[realms_list.presence]]
+		type = "PLAYING"
+		description = "{{player.name}} is looking for a Realm"
+		state = "Browsing Realms"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "It's Minecraft {{game.version}}, but modded"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[join_game]
+	enabled = true
+
+	[[join_game.presence]]
+		type = "PLAYING"
+		description = "{{player.name}} Entrando a craftania"
+		state = "Jugando Craftania"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[single_player]
+	enabled = true
+
+	[[single_player.presence]]
+		type = "PLAYING"
+		description = "Currently In {{world.name}}"
+		state = "Playing lonely mode"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[multi_player]
+	enabled = true
+
+	[[multi_player.presence]]
+		type = "PLAYING"
+		description = "{{player.name}} esta en Craftania"
+		state = "Jugando Craftania"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[realms]
+	enabled = false
+
+	[[realms.presence]]
+		type = "PLAYING"
+		description = "Playing on {{realm.name}}"
+		state = "Playing on a Realm"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "It's Minecraft {{game.version}}, but modded"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[paused]
+	enabled = false
+
+	[[paused.presence]]
+		type = "PLAYING"
+		description = "In the Pause Menu"
+		state = "Game Paused"
+		largeImageKey = ["mclogonew"]
+		largeImageText = "It's Minecraft {{game.version}}, but modded"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[generic]
+
+	[[generic.presence]]
+		type = "PLAYING"
+		description = "Jugando Craftania Modpack"
+		state = ""
+		largeImageKey = ["mclogonew"]
+		largeImageText = "{{game.version}}d"
+		smallImageKey = ["mclogo"]
+		smallImageText = "{{game.mods}} mods"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+		buttons = []
+
+[custom]
+	enabled = true
+	variables = []
+
+[dimension_overrides]
+	enabled = false
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "{{player.name}} is in The Overworld"
+			state = ""
+			largeImageKey = ["overworld"]
+			largeImageText = "In the Overworld"
+			smallImageKey = ["mclogo"]
+			smallImageText = "{{game.mods}} mods installed"
+			streamingActivityUrl = "https://twitch.tv/twitch"
+			buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "{{player.name}} is in The Nether"
+			state = ""
+			largeImageKey = ["nether"]
+			largeImageText = "In the Nether"
+			smallImageKey = ["mclogo"]
+			smallImageText = "{{game.mods}} mods installed"
+			streamingActivityUrl = "https://twitch.tv/twitch"
+			buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "{{player.name}} is in The End"
+			state = ""
+			largeImageKey = ["end"]
+			largeImageText = "In the End"
+			smallImageKey = ["mclogo"]
+			smallImageText = "{{game.mods}} mods installed"
+			streamingActivityUrl = "https://twitch.tv/twitch"
+			buttons = []
